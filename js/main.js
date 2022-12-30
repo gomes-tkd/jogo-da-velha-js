@@ -33,6 +33,12 @@ function handleTurno(x) {
         handleClearBoard();
     }
 
+    if (turnoContador % 2 === 0) {
+        jogadorAtual.innerHTML = "X";
+    } else {
+        jogadorAtual.innerHTML = "O";
+    }
+
     handleCondicaoVitoria(tabuleiro);
     turnoContador++;
 
